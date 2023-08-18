@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Decision Engine</title>
+  <meta charset="utf-8" />
+  <meta name="url" content="https://your-site-domain.com" />
+  <meta name="title" content="Decision Engine" />
+  <meta name="description" content="Welcome to Personal Wiki" />
+  <meta name="image" content="https://publishkit.dev/attachements/og-image.png" />
+  <meta name="name" content="Personal Wiki" />
+  <meta name="keyswords" content="publishkit, blogging, markdown" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:image" content="https://publishkit.dev/attachements/og-image.png" />
+  <meta property="og:url" content="https://your-site-domain.com" />
+  <meta property="og:title" content="Decision Engine" />
+  <meta property="og:description" content="Welcome to Personal Wiki" />
+  <meta property="og:site_name" content="Personal Wiki" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/publishkit/kit@latest/init.js"></script>
+</head>
+
+<body>
+  <template id="frontmatter">
+    {"tags":["Tac-Talk"]}
+  </template>
+  <template id="content">
+    <h1>Overview</h1>
+    <p>In Tac Talk any time an <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> enters a situation with an uncertain outcome it's called a <strong>Mechanical Decision</strong> and gets decided by the <strong>Decision Engine</strong>. All <strong>Mechanical Decisions</strong> in Tac Talk are made by rolling a 100 sided die or <strong>D100</strong>; more on that later. The <a data-tooltip-position="top" href="Game Rules#Dispatcher" class="internal-link">Dispatcher</a> will decide when an action results in a <strong>Mechanical Decision</strong> and therefore a roll. Rolls fall into one of two categories:</p>
+    <ol>
+      <li><a href="#Challenge Rolls" class="internal-link">Challenge Rolls</a></li>
+      <li><a href="#Outcome Rolls" class="internal-link">Outcome Rolls</a></li>
+    </ol>
+    <p>Except in specific circumstances which are covered in <a href="#Resolving Contests" class="internal-link">Resolving Contests</a>, the <a data-tooltip-position="top" href="Game Rules#Dispatcher" class="internal-link">Dispatcher</a> always decides which type of roll applies to an action and the specifics surrounding that roll. Players may never petition the <a data-tooltip-position="top" href="Game Rules#Dispatcher" class="internal-link">Dispatcher</a> for specific rolls.</p>
+    <div data-callout="warning" class="callout">
+      <div class="callout-title">
+        <div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-alert-triangle">
+            <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path>
+            <line x1="12" y1="9" x2="12" y2="13"></line>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg></div>
+        <div class="callout-title-inner">The <a data-tooltip-position="top" href="Game Rules#Dispatcher" class="internal-link">Dispatcher</a> will often need to use the <strong>Decision Engine</strong> for situations involving other non-player characters. The <a data-tooltip-position="top" href="Game Rules#Dispatcher" class="internal-link">Dispatcher</a> should use the same rules detailed for <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operators</a> except when noted by these yellow warning blocks.</div>
+      </div>
+    </div>
+    <h2>Rolling A D100</h2>
+    <p>A <strong>D100</strong> can be rolled legally in any of three ways.</p>
+    <ol>
+      <li>Rolling an actual <strong>D100</strong></li>
+      <li>Rolling a <strong>D%</strong> (a <strong>D10</strong> from 00-90) and a <strong>D10</strong></li>
+      <li>Rolling two <strong>D10</strong>, called <strong>2D10</strong> separately; the first roll is always the tens place while the second is always the ones place.</li>
+    </ol>
+    <p>Because a <strong>D100</strong> is numbered 1-100, a result of all zeroes on any <strong>2D10</strong> or <strong>D%/D10</strong> roll is always a 100.</p>
+    <h2>Challenge Rolls</h2>
+    <p><strong>Challenge Rolls</strong> exist to test an <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator's</a> <a data-tooltip-position="top" href="System Rules#Skills" class="internal-link">Skills</a> when attempting to carry out a specific action. The outcome of a <strong>Challenge Roll</strong> is used to determine if an <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> succeeds or fails at a stated action. However, <strong>Challenge Rolls</strong> are not used to determine how that success or failure happens; the player and <a data-tooltip-position="top" href="Game Rules#Dispatcher" class="internal-link">Dispatcher</a> should agree on outcomes before the roll happens.</p>
+    <p><strong>Challenge Rolls</strong> should only be made when an <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> takes an action with a clear intent and a stated outcome. If a player can't explain either of these components for their <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> the <a data-tooltip-position="top" href="Game Rules#Dispatcher" class="internal-link">Dispatcher</a> should press the player to come up with them and not allow a roll until that point.</p>
+    <p>Players should understand the consequences of failing a <strong>Challenge Roll</strong> before they decide to take it, and may decide not to perform that action. They don't need to know the specifics, but they should fully understand how the outcome will affect their <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a>.</p>
+    <blockquote>
+      <p><em>Mike wants his Operator Troy to scale the side of the building and reach a balcony on the 3rd floor. The Dispatcher tells Mike that his action will require a Climbing Skill Challenge Roll and failing the roll means Troy will have to make an Outcome Roll against the Fall Damage Table. Since this could result in death, Mike decides Troy should take the stairs instead.</em></p>
+    </blockquote>
+    <p><strong>Challenge Rolls</strong> only test <a data-tooltip-position="top" href="System Rules#Skills" class="internal-link">Skills</a> when the outcome is uncertain. If an <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> is guaranteed to succeed or fail there is no reason to roll. This is covered in more depth below.</p>
+    <div data-callout="warning" class="callout">
+      <div class="callout-title">
+        <div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-alert-triangle">
+            <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path>
+            <line x1="12" y1="9" x2="12" y2="13"></line>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg></div>
+        <div class="callout-title-inner">The <a data-tooltip-position="top" href="Game Rules#Dispatcher" class="internal-link">Dispatcher</a> may ignore this restriction when performing <strong>Challenge Rolls</strong> for non-player characters. You might use this to impart a sense of randomness on predetermined decisions or increase tension at a crucial moment in your story.</div>
+      </div>
+    </div>
+    <p>Each <strong>Challenge Roll</strong> should only test one <a data-tooltip-position="top" href="System Rules#Skills" class="internal-link">Skill</a> at a time. If an <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> attempts to perform an action the <a data-tooltip-position="top" href="Game Rules#Dispatcher" class="internal-link">Dispatcher</a> believes is too complicated to be tested by a single skill they may call for a <strong>Linked Challenge Roll</strong>. A <strong>Linked Challenge Roll</strong> is a series of <strong>Challenge Rolls</strong> which each test a single <a data-tooltip-position="top" href="System Rules#Skills" class="internal-link">Skill</a> required to perform the complex action. Each roll in a <strong>Linked Challenge Roll</strong> will determine the degree to which the <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> succeeds or fails their action.</p>
+    <blockquote>
+      <p><em>Mike's Operator Troy attempts to shoot his pistol at the thugs in the van he is pursuing. The Dispatcher determines that this is a complex action which will require Challenge Rolls against Troy's Handgun Handling and Driving Skills. He succeeds at his Handgun Handling Roll, but fails his Driving Roll. The Dispatcher tells Mike that while Troy was able to shoot one thug, he falls out of the van and Troy can not move the car out of the way in time. Troy crashes the car, potentially ending the pursuit.</em></p>
+    </blockquote>
+    <p>The <a data-tooltip-position="top" href="Game Rules#Dispatcher" class="internal-link">Dispatcher</a> should never change the outcome of a successful <strong>Challenge Roll</strong>, even if the roll was part of a <strong>Linked Challenge Roll</strong>. If an <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> attempts an action and succeeds, their success is sacred and should occur exactly as the player described.</p>
+    <blockquote>
+      <p><em>Recall in the earlier example that even though Troy failed his Linked Challenge Roll for Handgun Handling and Driving, because he succeeded the Handgun Handling portion of the roll, he still managed to shoot the thug.</em></p>
+    </blockquote>
+    <h3>How To Make A Challenge Roll</h3>
+    <p>All <strong>Challenge Rolls</strong> are made against a <strong>Challenge Level</strong>. <strong>Challenge Level</strong> is a number between 0 and 200 which represents the base amount of difficulty associated with an action and varies depending on what the <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> is attempting. Each <a data-tooltip-position="top" href="System Rules#Skills" class="internal-link">Skill</a> details how to select an appropriate <strong>Challenge Level</strong> for actions which check against it.</p>
+    <p>The <a data-tooltip-position="top" href="Game Rules#Dispatcher" class="internal-link">Dispatcher</a> should always tell players the <strong>Challenge Level</strong> of an action; except in cases where the <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> performing the action would not reasonably understand the difficulty involved before attempting the action. In these cases, a player may have their <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> make an <strong>Outcome Roll</strong> against the <strong>Investigation Outcome Table</strong> for the <a data-tooltip-position="top" href="System Rules#Skills" class="internal-link">Skill</a> being tested by the <strong>Challenge Roll</strong> as long as the <strong>Challenge Roll</strong> is not part of a <strong>Linked Challenge Roll</strong>.</p>
+    <p>All <strong>Challenge Rolls</strong> are decided according to the following formula:</p>
+    <div data-callout="info" class="callout node-insert-event">
+      <div class="callout-title">
+        <div class="callout-icon"><svg width="16" height="16"></svg></div>
+        <div class="callout-title-inner">Result = D100 + <a data-tooltip-position="top" href="System Rules#Skills" class="internal-link">Skill Level</a> + <a data-tooltip-position="top" href="System Rules#^archetype-modifier" class="internal-link">Archetype Modifiers</a></div>
+      </div>
+    </div>
+    <p>The <a data-tooltip-position="top" href="Game Rules#Dispatcher" class="internal-link">Dispatcher</a> will tell players which <a data-tooltip-position="top" href="System Rules#^archetype-modifier" class="internal-link">Archetype Modifiers</a> - if any - to add to their roll. The <a data-tooltip-position="top" href="System Rules#Archetypes" class="internal-link">Archetypes</a> selected will depend on the <a data-tooltip-position="top" href="System Rules#Skills" class="internal-link">Skill</a> being used and how the <a data-tooltip-position="top" href="System Rules#Skills" class="internal-link">Skill</a> is being utilized.</p>
+    <blockquote>
+      <p><em>Mike's Operator Troy is attempting to shoot a moving target two blocks away with his sniper rifle. The Dispatcher tells Mike to make a Rifle Handling Challenge Roll. The Dispatcher also tells Mike that because the shot is quite far, he should use his Acuity Archetype Modifiers as Troy calculates the angle to aim.</em></p>
+    </blockquote>
+    <p>A single <strong>Challenge Roll</strong> may use <a data-tooltip-position="top" href="System Rules#^bb3f38" class="internal-link">Archetype Modifiers</a> from multiple <a data-tooltip-position="top" href="System Rules#Archetypes" class="internal-link">Archetypes</a> if the <a data-tooltip-position="top" href="Game Rules#Dispatcher" class="internal-link">Dispatcher</a> determines there is good reason.</p>
+    <blockquote>
+      <p><em>Troy is attempting to pick a self correcting lock, a tricky mechanism which rotates the lock to avoid picking attempts. The Dispatcher determines that while Troy only needs to roll a Lock Picking Challenge Roll, Mike should add both Troy's Acuity and Dexterity Archetype Modifiers to the Challenge Level of the roll.</em></p>
+    </blockquote>
+    <p>If the result of the roll after adding <a data-tooltip-position="top" href="System Rules#^bb3f38" class="internal-link">Archetype Modifiers</a> is more than the <strong>Challenge Level</strong> of the roll, the <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> succeeds. Ties always go to the <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a>.</p>
+    <p>Because <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> <a data-tooltip-position="top" href="System Rules#Skills" class="internal-link">Skills</a> have a maximum value of 100 and <strong>Challenge Level</strong> has a maximum value of 200 there will be times that an <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> can not succeed a <strong>Challenge Roll</strong> no matter the result of their <strong>D100</strong>. Conversely, if an <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator's</a> <a data-tooltip-position="top" href="System Rules#Skills" class="internal-link">Skill Level</a> and <a data-tooltip-position="top" href="System Rules#^bb3f38" class="internal-link">Archetype Modifiers</a> total to be higher than the <strong>Challenge Level</strong> of a roll, there is no way that <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> can fail the <strong>Challenge Roll</strong>.</p>
+    <p>In these cases, the player should not make a <strong>Challenge Roll</strong>. However, this is only the case when the player knows the <strong>Challenge Level</strong> of a given roll.</p>
+    <p>The <a data-tooltip-position="top" href="Game Rules#Dispatcher" class="internal-link">Dispatcher</a> should always tell the player making the <strong>Challenge Roll</strong> what the <strong>Challenge Level</strong> of the roll is, except in cases where the player's <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> would not reasonably know how difficult the task is before attempting it. In these cases, the player may ask to have their <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> make an <strong>Outcome Roll</strong> against the <a data-tooltip-position="top" href="System Rules#Skills" class="internal-link">Skill's</a> <strong>Investigation Outcome Table</strong> in order to ascertain the <strong>Challenge Level</strong>.</p>
+    <h3>Resolving Contests</h3>
+    <p>A <strong>Contest</strong> is any action a player takes against another player's <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> which results in a <strong>Challenge Roll</strong>. <strong>Contests</strong> are variants of <strong>Challenge Rolls</strong> where some special rules apply.</p>
+    <p>Before a <strong>Contest</strong> both players must willingly agree to enter the contest by clearly stating an intent and an outcome, similarly to <strong>Challenge Rolls</strong>. However, if either player does not agree to the outcomes then the player who called for the <strong>Contest</strong> must choose a different course of action. There is no bargaining for outcomes, this helps avoid situations where one player feels they have been cheated or unfairly attacked by another.</p>
+    <blockquote>
+      <p><em>Troy enters a room, Sasha's Operator Kat doesn't recognize Troy and attempts to Disarm him. Sasha tells Mike: "Kat doesn't recognize you as you enter, I'd like to enter a contest, if I win you'll be disarmed". Mike responds: "I'll enter the contest but if I win Troy will kick you and you'll have to roll a Blunt Damage Outcome Roll, is that fair?". Since Kat agrees to the outcome the Contest continues.</em></p>
+    </blockquote>
+    <p>After agreeing to a <strong>Contest</strong> each player decides if their <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> is an attacker or defender in the <strong>Contest</strong>. The attacker is usually the <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> who calls for the <strong>Contest</strong> and is taking the action against another <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a>.</p>
+    <blockquote>
+      <p><em>Since Kat is attempting to disarm Troy - who would not otherwise have engaged her - Kat is considered to be the attacker in this Contest and Troy the defender.</em></p>
+    </blockquote>
+    <p>It is also possible for both <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operators</a> to be attackers in a <strong>Contest</strong>. This typically happens in situations where both parties have the same to gain or lose by succeeding or failing.</p>
+    <blockquote>
+      <p><em>Troy and Kat hit the boxing gym after a shift and start to spar, since both Operators are aiming to win the sparring match they are both considered attackers for the Contest.</em></p>
+    </blockquote>
+    <p>If both players believe their <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operators</a> are defenders in a <strong>Contest</strong>, there is no reason for the <strong>Contest</strong> to happen, and the player who called for the <strong>Contest</strong> should choose a different course of action.</p>
+    <p>Determining a defending <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> - if any - will help decide the outcome of the <strong>Contest</strong> after each player has completed their <strong>Challenge Roll</strong>.</p>
+    <p>In a <strong>Contest</strong> both players roll <strong>Challenge Rolls</strong> against relevant <a data-tooltip-position="top" href="System Rules#Skills" class="internal-link">Skills</a> to determine if they succeed or fail. When a <strong>Contest</strong> is entered each player picks the <a data-tooltip-position="top" href="System Rules#Skills" class="internal-link">Skill</a> they will use and tells the other player what their <a data-tooltip-position="top" href="System Rules#Skills" class="internal-link">Skill Aptitude</a> is; this will be the <strong>Challenge Level</strong> of the Roll. The <a data-tooltip-position="top" href="Game Rules#Dispatcher" class="internal-link">Dispatcher</a> is free to dispute the <a data-tooltip-position="top" href="System Rules#Skills" class="internal-link">Skill</a> choice of each player if they believe a more fitting <a data-tooltip-position="top" href="System Rules#Skills" class="internal-link">Skill</a> can be used or a <strong>Linked Challenge Roll</strong> should be made instead.</p>
+    <blockquote>
+      <p><em>As Kat moves to Troy and begins to disarm him a Contest is started. Sasha tells Mike she'll be using her CQC Skill with an Aptitude of 37 to attempt to disarm Troy. Mike tells Sasha that he will also use his CQC Skill but the Dispatcher feels Mike should use his Shotgun Handling Skill instead since he is holding a shotgun. Mike tells Sasha his Shotgun Handling Aptitude is 35.</em></p>
+    </blockquote>
+    <p>Just like normal <strong>Challenge Rolls</strong>, the <a data-tooltip-position="top" href="Game Rules#Dispatcher" class="internal-link">Dispatcher</a> notifies each player in a <strong>Contest</strong> which <a data-tooltip-position="top" href="System Rules#^bb3f38" class="internal-link">Archetype Modifiers</a> to add to their <strong>Challenge Level</strong> in order to determine the <strong>Challenge Difficulty</strong> of the roll. The <a data-tooltip-position="top" href="System Rules#^bb3f38" class="internal-link">Archetype Modifiers</a> used may differ between players.</p>
+    <p>Finally, both players roll their respective <strong>Challenge Rolls</strong>. The player who succeeds their <strong>Challenge Roll</strong> wins the <strong>Contest</strong>. If both players succeed the victory is given to the defending player. If there is no defending <a data-tooltip-position="top" href="Game Rules#Operator" class="internal-link">Operator</a> in this <strong>Contest</strong> both players must either choose new <a data-tooltip-position="top" href="System Rules#Skills" class="internal-link">Skills</a> to continue the <strong>Contest</strong> or accept the tie and mutually decide on the outcome. Players are not allowed to undo or ignore the results of a <strong>Contest</strong>, nor are they allowed to roll the same <a data-tooltip-position="top" href="System Rules#Skills" class="internal-link">Skills</a> twice when resolving a <strong>Contest</strong>.</p>
+    <blockquote>
+      <p><em>Both Mike and Sasha succeed at their Challenge Rolls. Since Troy is the defender in this Contest, the victory goes to him. Therefore, Kat fails to disarm Troy and must roll against the Blunt Damage Outcome Table after Troy kicks her.</em></p>
+    </blockquote>
+    <h2>Outcome Rolls</h2>
+    <p><strong>Outcome Rolls</strong> exist to select a single outcome from a list of possibilities. They are usually rolled to determine the consequence of a <a data-tooltip-position="top" href="#Challenge Rolls" class="internal-link">Challenge Roll</a>, either by the player or a non-player character.</p>
+    <p><strong>Outcome Rolls</strong> roll against tables for specific <a data-tooltip-position="top" href="System Rules#Skills" class="internal-link">Skills</a>, <a data-tooltip-position="top" href="System Rules#Archetypes" class="internal-link">Archetypes</a>, and scenarios. The <a data-tooltip-position="top" href="Game Rules#Dispatcher" class="internal-link">Dispatcher</a> will tell the player which <strong>Outcome Table</strong> they are rolling against. An <strong>Outcome Table</strong> will also detail any modifiers to make to the roll in order to select the outcome.</p>
+    <blockquote>
+      <p><em>Mike's Operator Troy is reloading his machine gun. The Dispatcher tells Mike to make an Outcome Roll against the Reload Outcome Table. Mike rolls a 48 and adds his Machine Gun Handling Aptitude of 36, as instructed by the table. His result of 84 means his reload succeeded with no complications.</em></p>
+    </blockquote>
+  </template>
+</body>
+
+</html>
