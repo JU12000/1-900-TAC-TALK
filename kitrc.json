@@ -1,0 +1,31 @@
+{
+  "tags": [
+    "Meta"
+  ],
+  "kit": {
+    "version": "latest",
+    "dirs": false
+  },
+  "site": {
+    "id": null,
+    "name": "1-900-TAC-TALK",
+    "description": "Rule set",
+    "url": "https://ju12000.github.io/1-900-TAC-TALK.github.io/"
+  },
+  "og": {
+    "image": "https://publishkit.dev/attachements/og-image.png"
+  },
+  "plugins": {
+    "theme": "@default",
+    "header": true,
+    "darkmode": true,
+    "navbar": true,
+    "toc": true,
+    "search": true,
+    "social": true
+  },
+  "social": {
+    "github": "https://publishkit.dev",
+    "discord": "https://publishkit.dev"
+  }
+}
