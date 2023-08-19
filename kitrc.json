@@ -9,23 +9,23 @@
   "site": {
     "id": null,
     "name": "1-900-TAC-TALK",
-    "description": "Rule set",
-    "url": "https://ju12000.github.io/1-900-TAC-TALK.github.io/"
-  },
-  "og": {
-    "image": "https://publishkit.dev/attachements/og-image.png"
+    "description": "Operators are standing by.",
+    "url": "https://tactalk.org"
   },
   "plugins": {
-    "theme": "@default",
-    "header": true,
+    "theme": "@matrix",
+    "breadcrumbs": true,
     "darkmode": true,
     "navbar": true,
-    "toc": true,
     "search": true,
-    "social": true
+    "social": true,
+    "toc": true
+  },
+  "search": {
+    "shortcut": "ctrl+f",
+    "placeholder": "Place a call..."
   },
   "social": {
-    "github": "https://publishkit.dev",
-    "discord": "https://publishkit.dev"
+    "github": "https://github.com/JU12000"
   }
 }

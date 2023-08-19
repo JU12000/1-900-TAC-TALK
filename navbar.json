@@ -1,0 +1,20 @@
+{
+  "nested": true,
+  "items": [
+    {
+      "label": "Getting Started",
+      "isOpen": true,
+      "items": [
+        [
+          "<a href=\"Getting Started/Decision Engine.html\" class=\"internal-link\">Decision Engine</a>"
+        ],
+        [
+          "<a href=\"Getting Started/Game Rules.html\" class=\"internal-link\">Game Rules</a>"
+        ],
+        [
+          "<a href=\"Getting Started/System Rules.html\" class=\"internal-link\">System Rules</a>"
+        ]
+      ]
+    }
+  ]
+}
